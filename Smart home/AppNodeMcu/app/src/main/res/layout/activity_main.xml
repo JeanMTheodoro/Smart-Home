@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/bntQuarto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/shape_bnt"
+        android:elevation="2dp"
+        android:src="@drawable/ic_quarto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bntRoom"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/shape_bnt"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toEndOf="@+id/bntQuarto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_tv" />
+
+    <ImageButton
+        android:id="@+id/bntLunch"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_bnt"
+        android:elevation="2dp"
+        android:src="@drawable/ic_geladeira1"
+        app:layout_constraintEnd_toEndOf="@+id/bntQuarto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bntQuarto" />
+
+    <ImageButton
+        android:id="@+id/bntW"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/shape_bnt"
+        android:src="@drawable/chuveiro"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bntRoom"
+        app:layout_constraintTop_toBottomOf="@+id/bntRoom" />
+
+    <ImageButton
+        android:id="@+id/bnt_Record"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/shape_bnt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bntW"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/bntLunch"
+        app:srcCompat="@drawable/ic_microfone_512" />
+
+    <TextView
+        android:id="@+id/fire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:padding="20dp"
+        android:text=" "
+        app:layout_constraintBottom_toTopOf="@+id/bnt_Record"
+        app:layout_constraintEnd_toEndOf="@+id/bntW"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/bntLunch" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
